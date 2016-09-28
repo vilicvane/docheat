@@ -22,14 +22,14 @@ import {
 
 export class DocheatOptions extends Options {
     @option({
-        description: 'Target documentation markdown files',
+        description: 'Glob patterns of target markdown files, defaults to `README,README.*`',
         flag: 't',
         default: 'README,README.*'
     })
     target: Matches;
 
     @option({
-        description: 'Heading level of generated entries',
+        description: 'Heading level of generated entries, defaults to 4',
         flag: 'l',
         default: 4
     })

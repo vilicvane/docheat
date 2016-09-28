@@ -9,8 +9,8 @@ source code, i.e., cheating.
 Please understand it is **NOT** meant to generate detailed and well-organized
 documentations.
 
-Also, currently it supports **ONLY** exported functions, please check out the issue list
-to see what might be coming.
+Also, currently it supports **ONLY** exported functions, please check out the
+issue list to see what might be coming.
 
 ## Installing
 
@@ -20,12 +20,15 @@ npm install docheat -g
 
 ## Usage and example
 
+**Note:** to understand the example below, please read in the order suggested
+by step numbers.
+
 > **1.** A docheat entry list starts with marker comment:<br>
 > `<!-- docheat:functions -->`
 
 <!-- quotes-separator -->
 
-> **3.** As an example, the following content is generated using docheat under
+> **3.** For example, the following content is generated using docheat under
 > current project folder with command `docheat demo/tsconfig.json`:
 
 <!-- docheat:functions -->
@@ -47,6 +50,12 @@ Another useless function with overloads for demonstration.
 
 > **2.** And ends with marker comment:<br>
 > `<!-- endcheat -->`
+
+## Command options
+
+- **target:** Glob patterns of target markdown files, defaults to
+  `README,README.*`.
+- **level:** Heading level of generated entries, defaults to `4`.
 
 # License
 
