@@ -22,15 +22,15 @@ npm install docheat -g
 
 ## Usage and example
 
-**Note:** to understand the example below, please read in the order suggested
-by step numbers.
+**Note:** to understand the example, please read in the order suggested by step
+numbers.
 
-> **1.** A docheat entry list starts with marker comment:<br>
+> **1.** A docheat entry list starts with marker comment below:<br>
 > `<!-- docheat:functions -->`
 
 <!-- quotes-separator -->
 
-> **3.** For example, the following content is generated using docheat under
+> **3.** And the following content is generated using docheat under
 > current project folder with command `docheat demo/tsconfig.json`:
 
 <!-- docheat:functions -->
@@ -50,7 +50,7 @@ Another useless function with overloads for demonstration.
 
 <!-- endcheat -->
 
-> **2.** And ends with marker comment:<br>
+> **2.** And ends with marker comment below:<br>
 > `<!-- endcheat -->`
 
 ## Command options
