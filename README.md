@@ -14,13 +14,13 @@ see what might be coming next.
 Please understand it is **NOT** meant to generate detailed and well-organized
 documentations.
 
-## Installing
+## Installation
 
 ```sh
 npm install docheat -g
 ```
 
-## Usage and example
+## Usage and Example
 
 **Note:** to understand the example, please read in the order suggested by step
 numbers.
@@ -53,7 +53,7 @@ Another useless function with overloads for demonstration.
 > **2.** And ends with marker comment below:<br>
 > `<!-- endcheat -->`
 
-## Command options
+## Command Options
 
 - **target:** Glob patterns of target markdown files, defaults to
   `README,README.*`.
