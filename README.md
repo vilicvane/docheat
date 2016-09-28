@@ -1,3 +1,5 @@
+[![NPM Package](https://badge.fury.io/js/docheat.svg)](https://www.npmjs.com/package/docheat)
+
 # Docheat
 
 Docheat is a "cheating" tool for libraries written in TypeScript, it generates
@@ -18,8 +20,10 @@ npm install docheat -g
 
 ## Usage and example
 
-> **1.** A docheat entry list starts with marker comment:\
+> **1.** A docheat entry list starts with marker comment:<br>
 > `<!-- docheat:functions -->`
+
+<!-- quotes-separator -->
 
 > **3.** As an example, the following content is generated using docheat under
 > current project folder with command `docheat demo/tsconfig.json`:
@@ -41,7 +45,7 @@ Another useless function with overloads for demonstration.
 
 <!-- endcheat -->
 
-> **2.** And ends with marker comment:\
+> **2.** And ends with marker comment:<br>
 > `<!-- endcheat -->`
 
 # License
