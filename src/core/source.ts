@@ -6,7 +6,6 @@ import {
 
 import {
     ClassDeclaration,
-    CompilerOptions,
     Declaration,
     FunctionDeclaration,
     Node,
@@ -15,7 +14,6 @@ import {
     Signature,
     TypeParameter,
     Symbol,
-    SymbolFlags,
     SyntaxKind,
     createProgram,
     displayPartsToString,

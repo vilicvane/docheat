@@ -3,7 +3,6 @@ import * as Path from 'path';
 
 import {
     Command,
-    ExpectedError,
     Object as ClimeObject,
     Options,
     command,
@@ -12,8 +11,6 @@ import {
 } from 'clime';
 
 import { Matches } from 'clime-glob';
-import * as TS from 'typescript';
-import * as v from 'villa';
 
 import {
     getExports,
