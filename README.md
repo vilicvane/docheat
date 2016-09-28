@@ -59,6 +59,6 @@ Another useless function with overloads for demonstration.
   `README,README.*`.
 - **level:** Heading level of generated entries, defaults to `4`.
 
-# License
+## License
 
 MIT License.
