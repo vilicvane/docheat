@@ -1,0 +1,7 @@
+/src/
+/typings/
+/demo/
+
+/tsconfig.json
+
+.*

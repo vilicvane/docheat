@@ -1,0 +1,35 @@
+{
+  "name": "docheat",
+  "version": "0.1.0",
+  "description": "A \"cheating\" tool that generates brief API references for TypeScript libraries with links to source code.",
+  "scripts": {
+    "clean": "rm -rf bld",
+    "build": "tsc"
+  },
+  "bin": {
+    "docheat": "bld/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilic/docheat.git"
+  },
+  "keywords": [
+    "documentation",
+    "generation",
+    "typescript"
+  ],
+  "author": "vilicvane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vilic/docheat/issues"
+  },
+  "homepage": "https://github.com/vilic/docheat#readme",
+  "devDependencies": {
+    "typescript": "^2.0.3"
+  },
+  "dependencies": {
+    "clime": "^0.4.3",
+    "clime-glob": "^0.1.1",
+    "source-map-support": "^0.4.2"
+  }
+}
