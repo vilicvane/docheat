@@ -6,11 +6,13 @@ Docheat is a "cheating" tool for libraries written in TypeScript, it generates
 API references inside a markdown file with brief descriptions and links to
 source code, i.e., cheating.
 
+This tool is developed for [villa](https://github.com/vilic/villa), a set
+of promise utilities for `async`-`await`-ready environment. And currently it
+supports **ONLY** exported **functions**, please check out the issue list to
+see what might be coming next.
+
 Please understand it is **NOT** meant to generate detailed and well-organized
 documentations.
-
-Also, currently it supports **ONLY** exported functions, please check out the
-issue list to see what might be coming.
 
 ## Installing
 
