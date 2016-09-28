@@ -173,10 +173,15 @@ export async function getExports(projectFile: ClimeObject.File): Promise<Library
 
     function serializeParameter(symbol: Symbol): ParameterEntry {
         let declaration = symbol.valueDeclaration as ParameterDeclaration;
+
         let optional = !!(declaration.initializer || declaration.questionToken);
         let rest = !!declaration.dotDotDotToken;
         let type = checker
             .typeToString(checker.getTypeOfSymbolAtLocation(symbol, declaration));
+
+        if (optional) {
+            type = type.replace(/\s*\|\s*undefined(?=$|\s*\|)/, '');
+        }
 
         return Object.assign(
             serializeSymbol(symbol),
