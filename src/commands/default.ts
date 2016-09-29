@@ -50,7 +50,7 @@ export default class extends Command {
 
         let exports = await getExports(projectFile);
 
-        console.log('Updating documentations...');
+        console.info('Updating documentations...');
 
         for (let fileName of options.target) {
             await updateDocumentationFile(fileName, exports, {
