@@ -55,9 +55,10 @@ Another useless function with overloads for demonstration.
 
 ## Command Options
 
-- **target:** Glob patterns of target markdown files, defaults to
+- **-t, --target:** Glob patterns of target markdown files, defaults to
   `README,README.*`.
-- **level:** Heading level of generated entries, defaults to `4`.
+- **-l, --level:** Heading level of generated entries, defaults to `4`.
+- **-b, --base-url:** Base url of source code links
 
 ## License
 
