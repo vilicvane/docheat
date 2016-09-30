@@ -1,4 +1,5 @@
 import * as Path from 'path';
+import * as URL from 'url';
 
 import {
     FunctionEntry,
@@ -25,8 +26,10 @@ export default function (entry: FunctionEntry, options: GeneratingOptions): stri
         .relative(Path.dirname(options.fileName), fileName)
         .replace(/\\/g, '/')
 
+    let url = URL.resolve(options.baseUrl, fileName);
+
     let text = `\
-${headingSharps} [[+]](${fileName}#L${lineNumber}) \`${name}${signatureToString(entry)}\`${overloadsPlusText}\n\n`;
+${headingSharps} [[+]](${url}#L${lineNumber}) \`${name}${signatureToString(entry)}\`${overloadsPlusText}\n\n`;
 
     if (documentation) {
         // TODO: check TypeScript 2.1 and see whether it handles @returns.

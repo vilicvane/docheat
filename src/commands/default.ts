@@ -31,10 +31,25 @@ export class DocheatOptions extends Options {
         default: 4
     })
     level: number;
+
+    @option({
+        description: 'Base url of source code links',
+        flag: 'b',
+        default: '',
+        placeholder: 'url'
+    })
+    baseUrl: string;
 }
 
 @command({
-    description: 'Update definition references in documentations'
+    description: `\
+Generates brief API references for your TypeScript library.
+   _         _           _
+ _| |___ ___| |_ ___ ___| |_
+| . | . |  _|   | -_| .'|  _|
+|___|___|___|_|_|___|__,|_|
+
+https://github.com/vilic/docheat`
 })
 export default class extends Command {
     async execute(
@@ -55,7 +70,8 @@ export default class extends Command {
         for (let fileName of options.target) {
             await updateDocumentationFile(fileName, exports, {
                 level: options.level,
-                fileName
+                fileName,
+                baseUrl: options.baseUrl
             });
 
             console.info(`Updated "${fileName}".`);

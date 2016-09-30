@@ -14,6 +14,7 @@ const LIST_REGEX = /^(<!--\s*docheat:(\w+)\s*-->)(?:[^]*?(^<!--\s*endcheat\s*-->
 export interface GeneratingOptions {
     level: number;
     fileName: string;
+    baseUrl: string;
 }
 
 export async function updateDocumentationFile(

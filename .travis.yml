@@ -3,6 +3,8 @@ node_js:
 - '6'
 before_script:
 - npm run build
+before_deploy:
+- npm run docheat-travis
 deploy:
   provider: npm
   email: i@vilic.info

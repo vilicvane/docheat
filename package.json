@@ -1,10 +1,11 @@
 {
   "name": "docheat",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A \"cheating\" tool that generates brief API references for TypeScript libraries with links to source code.",
   "scripts": {
     "clean": "rm -rf bld",
-    "build": "tsc"
+    "build": "tsc",
+    "docheat-travis": "node bld/cli.js -b https://github.com/$TRAVIS_REPO_SLUG/blob/$TRAVIS_TAG/"
   },
   "bin": {
     "docheat": "bld/cli.js"
