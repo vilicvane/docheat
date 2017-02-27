@@ -2,7 +2,6 @@ language: node_js
 node_js:
 - '6'
 before_script:
-- npm install typescript@~2.2.1
 - npm run build
 before_deploy:
 - npm run docheat-travis
