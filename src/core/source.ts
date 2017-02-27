@@ -8,8 +8,8 @@ import {
     ClassDeclaration,
     Declaration,
     FunctionDeclaration,
+    ModifierFlags,
     Node,
-    NodeFlags,
     ParameterDeclaration,
     Signature,
     TypeParameter,
@@ -18,6 +18,7 @@ import {
     createProgram,
     displayPartsToString,
     forEachChild,
+    getCombinedModifierFlags,
     parseJsonConfigFileContent,
     sys
 } from 'typescript';
@@ -70,7 +71,7 @@ export async function getExports(projectFile: ClimeObject.File): Promise<Library
     };
 
     function visit(node: Node) {
-        if (!(node.flags & NodeFlags.Export)) {
+        if (!node.modifiers || !(getCombinedModifierFlags(node) & ModifierFlags.Export)) {
             return;
         }
 
