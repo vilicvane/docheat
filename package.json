@@ -1,6 +1,6 @@
 {
   "name": "docheat",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A \"cheating\" tool that generates brief API references for TypeScript libraries with links to source code.",
   "scripts": {
     "clean": "rm -rf bld",
