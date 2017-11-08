@@ -4,7 +4,7 @@
   "description": "A \"cheating\" tool that generates brief API references for TypeScript libraries with links to source code.",
   "scripts": {
     "clean": "rm -rf bld",
-    "lint": "tslint -c tslint.json -p tsconfig.json --type-check",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
     "build": "tsc",
     "docheat": "node bld/cli.js demo/tsconfig.json",
     "docheat-travis": "node bld/cli.js demo/tsconfig.json -b https://github.com/$TRAVIS_REPO_SLUG/blob/$TRAVIS_TAG/"

@@ -2,9 +2,10 @@ language: node_js
 node_js:
 - '8'
 before_script:
-- npm run build
+- yarn lint
+- yarn build
 before_deploy:
-- npm run docheat-travis
+- yarn docheat-travis
 deploy:
   provider: npm
   email: i@vilic.info
