@@ -40,8 +40,8 @@
   },
   "dependencies": {
     "clime": "^0.5.9",
-    "clime-glob": "^0.2.1",
+    "clime-glob": "^0.2.3",
     "source-map-support": "^0.4.2",
-    "villa": "0.3.0"
+    "villa": "^0.3.0"
   }
 }
