@@ -1,3 +1,5 @@
+// tslint:disable:no-console
+
 import * as FS from 'fs';
 import * as Path from 'path';
 

@@ -17,7 +17,7 @@ documentations.
 ## Installation
 
 ```sh
-npm install docheat -g
+yarn global add docheat
 ```
 
 ## Usage and Example
