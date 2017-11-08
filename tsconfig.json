@@ -1,22 +1,20 @@
 {
-    "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
-        "noEmitOnError": true,
-        "noImplicitAny": true,
-        "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "strictNullChecks": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "stripInternal": true,
-        "sourceMap": true,
-        "newLine": "LF",
-        "outDir": "bld",
-        "rootDir": "src"
-    },
-    "exclude": [
-        "node_modules",
-        "demo"
-    ]
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "importHelpers": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "stripInternal": true,
+    "sourceMap": true,
+    "newLine": "LF",
+    "rootDir": "src",
+    "outDir": "bld",
+    "plugins": [{"name": "tslint-language-service"}]
+  },
+  "exclude": ["node_modules", "demo"]
 }

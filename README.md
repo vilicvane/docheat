@@ -35,17 +35,17 @@ numbers.
 
 <!-- docheat:functions -->
 
-#### [[+]](demo/bar.ts#L4) `bar(a: string, b: number): Promise<void>`
+#### [[+]](demo/bar.ts#L4) `bar<>(a: string, b: number): Promise<void>`
 
 A useless function for demonstration.
 
-#### [[+]](demo/foo.ts#L4) `foo(a: string): Promise<void>`<sup>+2</sup>
+#### [[+]](demo/foo.ts#L4) `foo<>(a: string): Promise<void>`<sup>+2</sup>
 
 Another useless function with overloads for demonstration.
 
 ##### Overloads:
 
-- `foo(b: number): Date`
+- `foo<>(b: number): Date`
 - `foo<T>(...args: T[]): T`
 
 <!-- endcheat -->

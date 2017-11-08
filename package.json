@@ -3,8 +3,8 @@
   "version": "0.1.4",
   "description": "A \"cheating\" tool that generates brief API references for TypeScript libraries with links to source code.",
   "scripts": {
-    "tsc": "tsc",
     "clean": "rm -rf bld",
+    "lint": "tslint -c tslint.json -p tsconfig.json --type-check",
     "build": "tsc",
     "docheat": "node bld/cli.js demo/tsconfig.json",
     "docheat-travis": "node bld/cli.js demo/tsconfig.json -b https://github.com/$TRAVIS_REPO_SLUG/blob/$TRAVIS_TAG/"
@@ -28,15 +28,20 @@
   },
   "homepage": "https://github.com/vilic/docheat#readme",
   "devDependencies": {
-    "@types/node": "^7.0.5",
-    "typescript": "~2.2.1"
+    "@types/node": "^8.0.50",
+    "prettier": "^1.8.1",
+    "tslint": "^5.8.0",
+    "tslint-language-service": "^0.9.6",
+    "typescript": "^2.6.1",
+    "vts": "^5.8.2"
   },
   "peerDependencies": {
-    "typescript": "~2.2.1"
+    "typescript": "^2.6.1"
   },
   "dependencies": {
-    "clime": "^0.4.3",
-    "clime-glob": "^0.1.1",
-    "source-map-support": "^0.4.2"
+    "clime": "^0.5.9",
+    "clime-glob": "^0.2.1",
+    "source-map-support": "^0.4.2",
+    "villa": "0.3.0"
   }
 }

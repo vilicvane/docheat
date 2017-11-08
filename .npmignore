@@ -1,7 +1,9 @@
 /src/
-/typings/
+/types/
 /demo/
 
 /tsconfig.json
+
+/yarn.lock
 
 .*
